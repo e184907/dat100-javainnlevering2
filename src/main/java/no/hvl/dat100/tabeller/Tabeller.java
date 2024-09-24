@@ -2,19 +2,23 @@ package no.hvl.dat100.tabeller;
 
 public class Tabeller {
 	public static void main(String[] args) {
-		int[] tabell = {1,2,3,4,5};
+		int[] tabell = { 1, 2, 3, 4, 5 };
+		int[] tabell2 = { 42, 67, 89 };
 		skrivUt(tabell);
+
+		tilStreng(tabell2);
+
 	}
 	// a)
-	
+
 	public static void skrivUt(int[] tabell) {
 		System.out.print("[");
-		for(int i =0; i<tabell.length; i++) {
+		for (int i = 0; i < tabell.length; i++) {
 			System.out.print(tabell[i]);
-			if (i<tabell.length-1) {
+			if (i < tabell.length - 1) {
 				System.out.print(", ");
 			}
-			
+
 		}
 		System.out.print("]");
 
@@ -22,10 +26,26 @@ public class Tabeller {
 
 	// b)
 	public static String tilStreng(int[] tabell) {
+		System.out.println();
 		
+		String result = "[";
+		
+		System.out.print("[");
+		for (int i = 0; i < tabell.length; i++) {
+			
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
+			System.out.print(tabell[i]);
+
+			if (i < tabell.length - 1) {
+				
+				System.out.print(", ");
+
+			}
+		}
+		
+		System.out.println("]");
+		return result;
+
 	}
 
 	// c)
