@@ -4,9 +4,15 @@ public class Tabeller {
 	public static void main(String[] args) {
 		int[] tabell = { 1, 2, 3, 4, 5 };
 		int[] tabell2 = { 42, 67, 89 };
+		int[] tabell3 = { 10, 20, 30 };
+		
 		skrivUt(tabell);
-
 		tilStreng(tabell2);
+		
+		
+		int totalsum =summer(tabell3);
+		
+		System.out.println("summen av tabell3 er: " + totalsum);
 
 	}
 	// a)
@@ -27,22 +33,18 @@ public class Tabeller {
 	// b)
 	public static String tilStreng(int[] tabell) {
 		System.out.println();
-		
 		String result = "[";
-		
+
 		System.out.print("[");
 		for (int i = 0; i < tabell.length; i++) {
-			
-
 			System.out.print(tabell[i]);
 
 			if (i < tabell.length - 1) {
-				
 				System.out.print(", ");
 
 			}
 		}
-		
+
 		System.out.println("]");
 		return result;
 
@@ -50,10 +52,19 @@ public class Tabeller {
 
 	// c)
 	public static int summer(int[] tabell) {
+		int[] tabell3 = { 10, 20, 30 };
+		int antall = tabell3.length;
+		System.out.println("antall elementer er: " + antall);
+		
+		int sum=0;
+			for (int i = 0; i<tabell3.length; i++) {
+				sum +=tabell3[i];
+				
+			}
+			
+		return sum;
+			}
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden summer ikke implementert");
-	}
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
