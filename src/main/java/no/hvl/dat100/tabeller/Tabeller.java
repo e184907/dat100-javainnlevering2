@@ -10,6 +10,7 @@ public class Tabeller {
 		tilStreng(tabell2);
 		
 		
+		
 		int totalsum =summer(tabell3);
 		
 		System.out.println("summen av tabell3 er: " + totalsum);
@@ -52,13 +53,12 @@ public class Tabeller {
 
 	// c)
 	public static int summer(int[] tabell) {
-		int[] tabell3 = { 10, 20, 30 };
-		int antall = tabell3.length;
+		int antall = tabell.length;
 		System.out.println("antall elementer er: " + antall);
 		
 		int sum=0;
-			for (int i = 0; i<tabell3.length; i++) {
-				sum +=tabell3[i];
+			for (int i = 0; i<tabell.length; i++) {
+				sum +=tabell[i];
 				
 			}
 			
