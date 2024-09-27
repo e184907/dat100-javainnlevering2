@@ -17,7 +17,8 @@ public class Tabeller {
 		int totalsum =summer(tabell3);
 		System.out.println("summen av tabell3 er: " + totalsum);
 		
-		//Her kan du redigere variabelen for å sjekke om den er i tabell4
+		//Her kan du redigere variabelen for å sjekke om den er i tabell4 æsj
+		
 		int tall4=5;
 		finnesTall(tabell4, tall4);
 			
