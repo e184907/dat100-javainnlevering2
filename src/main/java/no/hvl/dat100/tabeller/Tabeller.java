@@ -40,8 +40,7 @@ public class Tabeller {
 		reverser(tabell6);
 		
 		
-		
-		System.out.print("[");
+				System.out.print("[");
 		for (int i =0; i<sammensattTabell.length; i++) {
 			System.out.print(sammensattTabell[i]);
 			if (i<sammensattTabell.length-1) {
@@ -51,6 +50,9 @@ public class Tabeller {
 			
 		}
 		System.out.print(" ]");
+		System.out.println("Tabellen er sortert: " + erSortert(tabell));
+		
+
 		
 		}
 
@@ -155,8 +157,16 @@ public class Tabeller {
 	// g)
 	public static boolean erSortert(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
+		int j = 0;
+		boolean sortert = true;
+		
+		while (sortert && j < tabell.length - 1) {
+			if (tabell[j] > tabell[j+1]) {
+				sortert = false;
+			}
+			j++;
+		}
+		return sortert;
 	}
 
 	// h)
