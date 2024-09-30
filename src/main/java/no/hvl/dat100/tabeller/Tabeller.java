@@ -37,6 +37,7 @@ public class Tabeller {
 		System.out.print("Tabell6 reversert er: ");
 		reverser(tabell6);
 		
+		
 		}
 
 	// a)
@@ -148,7 +149,16 @@ public class Tabeller {
 	public static int[] settSammen(int[] tabell7, int[] tabell8) {
 		int[] sammensatt = new int[tabell7.length + tabell8.length];
 		
-	
+		for (int i=0; i<tabell7.length; i++) {
+			sammensatt[i]=tabell7[1];
+			
+			
+		}
+		for (int i =0; i<tabell8.length; i++) {
+			sammensatt[tabell7.length+i] =tabell8[i];
+			
+		}
+		return sammensatt;
 
 	}
 }
