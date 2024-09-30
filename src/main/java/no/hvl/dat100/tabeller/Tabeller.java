@@ -6,6 +6,7 @@ public class Tabeller {
 		int[] tabell2 = { 42, 67, 89 };
 		int[] tabell3 = { 10, 20, 30 };
 		int[] tabell4 = { 5, 10, 15 };
+
 		int[] tabell5 = { 1, 3, 5, 7, 10 };
 		int[] tabell6 = { 2, 4, 6, 8, 10 };
 		int[] tabell7 = { 1, 2, 3, 4, 5 };
@@ -13,15 +14,25 @@ public class Tabeller {
 
 		int[] sammensattTabell = settSammen(tabell7, tabell8);
 
+		
+		
+		// a)
+
 		skrivUt(tabell);
+		
+		
+		// b)
 		tilStreng(tabell2);
+
 
 		int totalsum = summer(tabell3);
 		System.out.println("Summen av tabell3 er: " + totalsum);
 
-		// Her kan du redigere variabelen for å sjekke om den er i tabell4
-
-		int tall4 = 5;
+		
+		
+		//Her kan du redigere variabelen for å sjekke om den er i tabell4
+		
+		int tall4=5;
 		finnesTall(tabell4, tall4);
 
 		int tall5 = 7;
@@ -36,8 +47,11 @@ public class Tabeller {
 
 		System.out.print("Tabell6 reversert er: ");
 		reverser(tabell6);
-
+	
+		
+		// g)
 		System.out.println("Tabellen er sortert: " + erSortert(tabell));
+		
 
 		System.out.print("Tabell7 og tabell8 sett sammen er: ");
 		skrivUt(sammensattTabell);
