@@ -8,6 +8,8 @@ public class Tabeller {
 		int[] tabell4 = { 5, 10, 15 };
 		int[] tabell5= {1,3,5,7,10};
 		int[] tabell6 = {2,4,6,8,10};
+		int[] tabell7= {1,2,3,4,5};
+		int[] tabell8= {6,7,8,9,10};
 		
 		
 		skrivUt(tabell);
@@ -133,8 +135,6 @@ public class Tabeller {
 		
 		
 		
-		
-		
 	}
 
 	// g)
@@ -145,10 +145,10 @@ public class Tabeller {
 	}
 
 	// h)
-	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden settSammen ikke implementert");
+	public static int[] settSammen(int[] tabell7, int[] tabell8) {
+		int[] sammensatt = new int[tabell7.length + tabell8.length];
+		
+	
 
 	}
 }
