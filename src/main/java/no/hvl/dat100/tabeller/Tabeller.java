@@ -17,7 +17,7 @@ public class Tabeller {
 		
 		
 		int totalsum =summer(tabell3);
-		System.out.println("summen av tabell3 er: " + totalsum);
+		System.out.println("Summen av tabell3 er: " + totalsum);
 		
 		//Her kan du redigere variabelen for å sjekke om den er i tabell4
 		
@@ -78,7 +78,7 @@ public class Tabeller {
 	// c)
 	public static int summer(int[] tabell) {
 		int antall = tabell.length;
-		System.out.println("antall elementer er: " + antall);
+		System.out.println("Antall elementer er: " + antall);
 		
 		int sum=0;
 			for (int i = 0; i<tabell.length; i++) {
