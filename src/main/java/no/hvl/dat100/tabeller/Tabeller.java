@@ -38,6 +38,9 @@ public class Tabeller {
 		reverser(tabell6);
 		
 		
+		System.out.println("Tabellen er sortert: " + erSortert(tabell));
+		
+		
 		}
 
 	// a)
@@ -141,8 +144,16 @@ public class Tabeller {
 	// g)
 	public static boolean erSortert(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
+		int j = 0;
+		boolean sortert = true;
+		
+		while (sortert && j < tabell.length - 1) {
+			if (tabell[j] > tabell[j+1]) {
+				sortert = false;
+			}
+			j++;
+		}
+		return sortert;
 	}
 
 	// h)
