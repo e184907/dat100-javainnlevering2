@@ -11,15 +11,22 @@ public class Tabeller {
 		int[] tabell7= {1,2,3,4,5};
 		int[] tabell8= {6,7,8,9,10};
 		
-		int[] sammensattTabell =settSammen(tabell7, tabell8);
+		int[] sammensattTabell = settSammen(tabell7, tabell8);
 		
 		
+		// a)
 		skrivUt(tabell);
+		
+		
+		// b)
 		tilStreng(tabell2);
 		
 		
+		// c)
 		int totalsum =summer(tabell3);
 		System.out.println("Summen av tabell3 er: " + totalsum);
+		
+		
 		
 		//Her kan du redigere variabelen for å sjekke om den er i tabell4
 		
@@ -36,11 +43,17 @@ public class Tabeller {
 			
 		}
 	
+		
+		// f)
 		System.out.print("Tabell6 reversert er: ");
 		reverser(tabell6);
 		
+		
+		// g)
 		System.out.println("Tabellen er sortert: " + erSortert(tabell));
 		
+		
+		// h)
 				System.out.print("[");
 		for (int i =0; i<sammensattTabell.length; i++) {
 			System.out.print(sammensattTabell[i]);
