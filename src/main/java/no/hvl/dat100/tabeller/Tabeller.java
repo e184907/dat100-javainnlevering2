@@ -39,6 +39,7 @@ public class Tabeller {
 		System.out.print("Tabell6 reversert er: ");
 		reverser(tabell6);
 		
+		System.out.println("Tabellen er sortert: " + erSortert(tabell));
 		
 				System.out.print("[");
 		for (int i =0; i<sammensattTabell.length; i++) {
@@ -50,7 +51,7 @@ public class Tabeller {
 			
 		}
 		System.out.print(" ]");
-		System.out.println("Tabellen er sortert: " + erSortert(tabell));
+		
 		
 
 		
