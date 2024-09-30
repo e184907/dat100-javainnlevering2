@@ -11,6 +11,8 @@ public class Tabeller {
 		int[] tabell7= {1,2,3,4,5};
 		int[] tabell8= {6,7,8,9,10};
 		
+		int[] sammensattTabell =settSammen(tabell7, tabell8);
+		
 		
 		skrivUt(tabell);
 		tilStreng(tabell2);
@@ -36,6 +38,10 @@ public class Tabeller {
 	
 		System.out.print("Tabell6 reversert er: ");
 		reverser(tabell6);
+		
+		for (int i=0; i<=sammensattTabell.length; i++) {
+			System.out.print(i + " ");
+		}
 		
 		
 		System.out.println("Tabellen er sortert: " + erSortert(tabell));
@@ -158,17 +164,21 @@ public class Tabeller {
 
 	// h)
 	public static int[] settSammen(int[] tabell7, int[] tabell8) {
+		System.out.print("[ ");
 		int[] sammensatt = new int[tabell7.length + tabell8.length];
 		
 		for (int i=0; i<tabell7.length; i++) {
 			sammensatt[i]=tabell7[1];
+			System.out.print(", ");
 			
 			
 		}
 		for (int i =0; i<tabell8.length; i++) {
 			sammensatt[tabell7.length+i] =tabell8[i];
 			
+			
 		}
+		System.out.print("]");
 		return sammensatt;
 
 	}
