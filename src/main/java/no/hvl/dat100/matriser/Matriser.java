@@ -29,7 +29,7 @@ public class Matriser {
 		
 		// b)
 		int [][] skalerMatrise = skaler(2, matrise1);
-		System.out.println("Utskrift mutiplisert matrise: ");
+		System.out.println("Utskrift multiplisert matrise: ");
 		skrivUt(skalerMatrise);
 		
 		System.out.println();
