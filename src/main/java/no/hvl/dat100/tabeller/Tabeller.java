@@ -22,22 +22,34 @@ public class Tabeller {
 		
 		
 		// a)
+		System.out.print("Utskrift tabell: ");
 		skrivUt(tabell);
+		
+		System.out.println();
+		
 		
 		
 		// b)
-		tilStreng(tabell2);
+		System.out.println("Utskrift string: " + tilStreng(tabell2));
 
+		System.out.println();
 
+		
+		
 		// c)
-		int totalsum = summer(tabell3);
-		System.out.println("Summen av tabell3 er: " + totalsum);
+		System.out.println("Summen av tabell3 er: " + summer(tabell3));
 
+		System.out.println();
+		
+		
 		
 		// d)
 		// 			Her kan du redigere variabelen for å sjekke om den er i tabell4
 		int tall4 = 5;
 		finnesTall(tabell4, tall4);
+		
+		System.out.println();
+		
 
 		
 		// e)
@@ -50,15 +62,24 @@ public class Tabeller {
 			System.out.println("Tallet " + tall5 + " finnes ikke i tabellen");
 
 		}
+		
+		System.out.println();
+		
 
 		
 		// f)
 		System.out.print("Tabell6 reversert er: ");
 		reverser(tabell6);
+		
+		System.out.println();
+		
 	
 		
 		// g)
 		System.out.println("Tabellen er sortert: " + erSortert(tabell));
+		
+		System.out.println();
+		
 		
 
 		// h)
@@ -93,7 +114,7 @@ public class Tabeller {
 
 	}
 
-	// b)
+	// b) SE PÅ!!
 	public static String tilStreng(int[] tabell) {
 		System.out.println();
 		String result = "[";
