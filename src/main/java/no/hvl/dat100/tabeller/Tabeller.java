@@ -12,12 +12,16 @@ public class Tabeller {
 		int[] tabell7 = { 1, 2, 3, 4, 5 };
 		int[] tabell8 = { 6, 7, 8, 9, 10 };
 
-		int[] sammensattTabell = settSammen(tabell7, tabell8);
 
+		
+		
+		
+		
+		
+		// Utskrift av metoder
 		
 		
 		// a)
-
 		skrivUt(tabell);
 		
 		
@@ -25,16 +29,18 @@ public class Tabeller {
 		tilStreng(tabell2);
 
 
+		// c)
 		int totalsum = summer(tabell3);
 		System.out.println("Summen av tabell3 er: " + totalsum);
 
 		
-		
-		//Her kan du redigere variabelen for å sjekke om den er i tabell4
-		
-		int tall4=5;
+		// d)
+		// 			Her kan du redigere variabelen for å sjekke om den er i tabell4
+		int tall4 = 5;
 		finnesTall(tabell4, tall4);
 
+		
+		// e)
 		int tall5 = 7;
 		int posisjon = posisjonTall(tabell5, tall5);
 
@@ -45,6 +51,8 @@ public class Tabeller {
 
 		}
 
+		
+		// f)
 		System.out.print("Tabell6 reversert er: ");
 		reverser(tabell6);
 	
@@ -53,13 +61,25 @@ public class Tabeller {
 		System.out.println("Tabellen er sortert: " + erSortert(tabell));
 		
 
-		System.out.print("Tabell7 og tabell8 sett sammen er: ");
+		// h)
+		int[] sammensattTabell = settSammen(tabell7, tabell8);
+		System.out.print("Tabell7 og tabell8 satt sammen er: ");
 		skrivUt(sammensattTabell);
 
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	// Implementerte metoder
+	
+	
 
 	// a)
-
 	public static void skrivUt(int[] tabell) {
 		System.out.print("[");
 		for (int i = 0; i < tabell.length; i++) {
@@ -132,7 +152,7 @@ public class Tabeller {
 		return -1;
 	}
 
-	// f) har ikke fått denne til å fungere
+	// f) (har ikke fått denne til å fungere)
 	public static int[] reverser(int[] tabell) {
 		System.out.print("[");
 		int[] reversert = new int[tabell.length];
