@@ -53,6 +53,7 @@ public class Tabeller {
 		
 
 		
+		
 		// e)
 		int tall5 = 7;
 		int posisjon = posisjonTall(tabell5, tall5);
