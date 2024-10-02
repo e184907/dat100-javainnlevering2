@@ -6,9 +6,10 @@ public class Matriser {
 
 		int[][] matrise1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 		int[][] matrise2 = { { 3, 2, 1 }, { 6, 5, 4 }, { 9, 8, 7 } };
-
+		int[][] matrise3 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 		// Utskrift av metoder
-
+		int [][] mat1 = {{1, 2}, {2,3}, {1,2}};
+		int [][] mat2 = {{1,2,3}, {2,1,2}};
 		// a)
 		System.out.println("Utskrift matrise: ");
 		skrivUt(matrise1);
@@ -34,9 +35,15 @@ public class Matriser {
 		System.out.print("Matrise1 og matrise2 er lik: ");
 		System.out.println(erLik(matrise1, matrise2));
 
-	}
+		int[][] resultat = multipliser(mat1, mat2);
 
-	// Implementerte metoder
+        System.out.println("Resultat av matrise-multiplikasjon:");
+        for (int i = 0; i < resultat.length; i++) {
+            for (int j = 0; j < resultat[i].length; j++) {
+                System.out.print(resultat[i][j] + " ");
+            }
+            System.out.println();
+        }}
 
 	// a)
 	public static void skrivUt(int[][] matrise) {
@@ -96,7 +103,7 @@ public class Matriser {
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
-		//int[][] a = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		// int[][] a = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 		// int[][] b = { { 3, 2, 1 }, { 6, 5, 4 }, { 9, 8, 7 } };
 
 		if (a.length != b.length) {
@@ -131,9 +138,17 @@ public class Matriser {
 
 	// f)
 	public static int[][] multipliser(int[][] a, int[][] b) {
+	
+		int[][] resultat = new int[a.length][b[0].length];
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < b[0].length; j++) {
+                for (int k = 0; k < a[0].length; k++) {
+                    resultat[i][j] += a[i][k] * b[k][j];
+                }
+            }
+        }
 
-	}
+        return resultat;
+    }
 }
