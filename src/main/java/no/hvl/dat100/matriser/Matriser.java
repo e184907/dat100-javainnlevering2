@@ -2,29 +2,86 @@ package no.hvl.dat100.matriser;
 
 public class Matriser {
 	
-	public static void main()
+	public static void main(String[] args) {
+		
+		int[][] matrise1 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+		int[][] matrise2 = {{3, 2, 1}, {6, 5, 4}, {9, 8, 7}};
+		
+		
+		
+		
+		
+		
+		
+		// Utskrift av metoder
+		
+		// a)
+		System.out.println("Utskrift matrise: ");
+		skrivUt(matrise1);
+		
+		System.out.println();
+		
+		
+		// b)
+		int [][] skalerMatrise = skaler(2, matrise1);
+		System.out.println("Utskrift multiplisert matrise: ");
+		skrivUt(skalerMatrise);
+		
+		System.out.println();
+		
+		
+		// c)
+		System.out.println("Matrise som string: " + tilStreng(matrise1));
+		
+		
+		
+	}
+	
+	
+	// Implementerte metoder
 
 	// a)
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+		for (int[] rad : matrise) {
+			for (int element : rad) {
+				System.out.print(element + " ");
+			}
+			System.out.println();
+		}
+		
 	}
 
-	// b)
+	// b)  MÅ ENDRES TIL FUNKE FOR MATRISE!!
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
+		String result = "[";
+		
+		for (int i = 0; i < matrise.length; i++) {
+			result += matrise[i];
+			
+			if (i < matrise.length - 1) {
+				result += ",";
+				}
+		}
+		result += "]";
+		
+		return result;
 		
 	}
 
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("Metoden skaler ikke implementert");
-	
+		int [][] skalerMatrise = new int[matrise.length][matrise[0].length];
+		
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++) {
+				skalerMatrise[i][j] = matrise[i][j] * tall;
+			}
+		}
+		return skalerMatrise;
+		
 	}
 
 	// d)
