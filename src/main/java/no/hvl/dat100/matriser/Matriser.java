@@ -22,16 +22,21 @@ public class Matriser {
 		System.out.println();
 		
 		
+		
 		// b)
+		System.out.println("Matrise som string: " + tilStreng(matrise1));
+		
+		System.out.println();
+		
+		
+		
+		// c)
 		int [][] skalerMatrise = skaler(2, matrise1);
 		System.out.println("Utskrift multiplisert matrise: ");
 		skrivUt(skalerMatrise);
 		
 		System.out.println();
 		
-		
-		// c)
-		System.out.println("Matrise som string: " + tilStreng(matrise1));
 		
 		
 		
@@ -55,16 +60,25 @@ public class Matriser {
 	// b)  MÅ ENDRES TIL FUNKE FOR MATRISE!!
 	public static String tilStreng(int[][] matrise) {
 
-		String result = "[";
+		String result = "";
 		
-		for (int i = 0; i < matrise.length; i++) {
-			result += matrise[i];
+		
+		for (int j = 0; j < matrise.length; j++) {
 			
-			if (i < matrise.length - 1) {
-				result += ",";
+		
+			for (int i = 0; i < matrise[j].length; i++) {
+				result += matrise[j][i];
+			
+				if (i < matrise[j].length - 1) {
+					result += " ";
 				}
+			
+			}
+			result += "/n ";
 		}
-		result += "]";
+		
+	
+		
 		
 		return result;
 		

@@ -31,7 +31,7 @@ public class Tabeller {
 		
 		
 		// b)
-		System.out.println("Utskrift string: " + tilStreng(tabell2));
+		System.out.println("Utskrift tekststreng: " + tilStreng(tabell2));
 
 		System.out.println();
 
