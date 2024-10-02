@@ -26,8 +26,6 @@ public class Matriser {
 		// b)
 		System.out.println("Matrise som string: " + "\n" + tilStreng(matrise1));
 		
-		System.out.println();
-		
 		
 		
 		// c)
