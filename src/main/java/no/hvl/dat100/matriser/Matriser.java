@@ -35,6 +35,7 @@ public class Matriser {
 		System.out.println();
 
 		// e)
+	
 		System.out.println("Matrise1:");
 		skrivUt(matrise1);
 		int[][] speiletMatrise = speile(matrise1);
@@ -42,6 +43,13 @@ public class Matriser {
 		System.out.println("Matrise1 speilet:");
 		skrivUt(speiletMatrise);
 		
+		for (int[] rader : matrise1) {
+			for (int element : rader) {
+				System.out.print(element );
+			}
+				
+			
+		}
 		}
 		
 	
@@ -73,11 +81,8 @@ public class Matriser {
 
 			for (int i = 0; i < matrise[j].length; i++) {
 				result += matrise[j][i];
-
-
-				if (i < matrise[j].length - 1) {
-					result += " ";
-				}
+				
+				result += " ";
 
 			}
 			result += "\n";
