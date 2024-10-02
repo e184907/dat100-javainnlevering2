@@ -6,7 +6,7 @@ public class Matriser {
 
 		int[][] matrise1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 		int[][] matrise2 = { { 3, 2, 1 }, { 6, 5, 4 }, { 9, 8, 7 } };
-
+		
 		// Utskrift av metoder
 
 		// a)
@@ -28,11 +28,23 @@ public class Matriser {
 
 		System.out.println();
 
+		// d)
 		
 		System.out.print("Matrise1 og matrise2 er lik: ");
 		System.out.println(erLik(matrise1, matrise2));
+		System.out.println();
 
-	}
+		// e)
+		System.out.println("Matrise1:");
+		skrivUt(matrise1);
+		int[][] speiletMatrise = speile(matrise1);
+		
+		System.out.println("Matrise1 speilet:");
+		skrivUt(speiletMatrise);
+		
+		}
+		
+	
 
 	// Implementerte metoder
 
@@ -117,12 +129,25 @@ public class Matriser {
 
 	// e)
 	public static int[][] speile(int[][] matrise) {
+		int[][] matrise1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		
+		int rader = matrise1.length;
+		int kolonner = matrise1[0].length;
+		
+		int[][] speilet = new int[rader][kolonner];
+		
+		for (int i =0; i<rader; i++) {
+			for(int j=0; j<kolonner; j++) {
+				speilet[i][j]=matrise1[rader-1-i][j];
+				
+			}
+			
+		}
 
-		// TODO
-
-		throw new UnsupportedOperationException("Metoden speile ikke implementert");
+		return speilet;
 
 	}
+
 
 	// f)
 	public static int[][] multipliser(int[][] a, int[][] b) {
