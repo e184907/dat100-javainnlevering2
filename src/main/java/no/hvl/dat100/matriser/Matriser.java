@@ -42,6 +42,7 @@ public class Matriser {
 		
 		System.out.println("Matrise1 speilet:");
 		skrivUt(speiletMatrise);
+	
 		}
 		
 	
