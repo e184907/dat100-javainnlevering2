@@ -4,13 +4,8 @@ public class Matriser {
 	
 	public static void main(String[] args) {
 		
-		int[][] matrise1 = {
-				
-				{1, 2, 3},
-				{4, 5, 6},
-				{7, 8, 9}
-				
-		};
+		int[][] matrise1 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+		int[][] matrise2 = {{3, 2, 1}, {6, 5, 4}, {9, 8, 7}};
 		
 		
 		
@@ -35,7 +30,8 @@ public class Matriser {
 		System.out.println();
 		
 		
-		
+		// c)
+		System.out.println("Matrise som string: " + tilStreng(matrise1));
 		
 		
 		
@@ -69,11 +65,21 @@ public class Matriser {
 		
 	}
 
-	// b)
+	// b)  MÅ ENDRES TIL FUNKE FOR MATRISE!!
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
+		String result = "[";
+		
+		for (int i = 0; i < matrise.length; i++) {
+			result += matrise[i];
+			
+			if (i < matrise.length - 1) {
+				result += ",";
+				}
+		}
+		result += "]";
+		
+		return result;
 		
 	}
 
