@@ -42,14 +42,6 @@ public class Matriser {
 		
 		System.out.println("Matrise1 speilet:");
 		skrivUt(speiletMatrise);
-		
-		for (int[] rader : matrise1) {
-			for (int element : rader) {
-				System.out.print(element );
-			}
-				
-			
-		}
 		}
 		
 	
