@@ -6,9 +6,12 @@ public class Matriser {
 
 		int[][] matrise1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 		int[][] matrise2 = { { 3, 2, 1 }, { 6, 5, 4 }, { 9, 8, 7 } };
+		int[][] matrise3 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		
 		
 		// Utskrift av metoder
-
+		int [][] mat1 = {{1, 2}, {2,3}, {1,2}};
+		int [][] mat2 = {{1,2,3}, {2,1,2}};
 		// a)
 		System.out.println("Utskrift matrise: ");
 		skrivUt(matrise1);
@@ -19,7 +22,11 @@ public class Matriser {
 		// b)
 		System.out.println("Matrise som string: " + "\n" + tilStreng(matrise1));
 
-		
+
+
+		System.out.println();
+
+
 		// c)
 		int[][] skalerMatrise = skaler(2, matrise1);
 		System.out.println("Utskrift multiplisert matrise: ");
@@ -27,12 +34,14 @@ public class Matriser {
 
 		System.out.println();
 
+
 		
 		// d)
+
 		
 		System.out.print("Matrise1 og matrise2 er lik: ");
 		System.out.println(erLik(matrise1, matrise2));
-		System.out.println();
+
 
 		
 		// e)
@@ -47,7 +56,16 @@ public class Matriser {
 		
 	
 
-	// Implementerte metoder
+		int[][] resultat = multipliser(mat1, mat2);
+
+
+        System.out.println("Resultat av matrise-multiplikasjon:");
+        for (int i = 0; i < resultat.length; i++) {
+            for (int j = 0; j < resultat[i].length; j++) {
+                System.out.print(resultat[i][j] + " ");
+            }
+            System.out.println();
+        }}
 
 	// a)
 	public static void skrivUt(int[][] matrise) {
@@ -62,7 +80,6 @@ public class Matriser {
 	}
 
 
-	// b) MÅ ENDRES TIL FUNKE FOR MATRISE!!
 
 	// b)
 
@@ -104,6 +121,7 @@ public class Matriser {
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
+		
 		if (a.length != b.length) {
 			return false;
 
@@ -127,31 +145,26 @@ public class Matriser {
 
 	// e)
 	public static int[][] speile(int[][] matrise) {
-		int[][] matrise1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-		
-		int rader = matrise1.length;
-		int kolonner = matrise1[0].length;
-		
-		int[][] speilet = new int[rader][kolonner];
-		
-		for (int i =0; i<rader; i++) {
-			for(int j=0; j<kolonner; j++) {
-				speilet[i][j]=matrise1[rader-1-i][j];
-				
-			}
-			
-		}
 
-		return speilet;
+		// TODO
+
+		throw new UnsupportedOperationException("Metoden speile ikke implementert");
 
 	}
-
 
 	// f)
 	public static int[][] multipliser(int[][] a, int[][] b) {
+	
+		int[][] resultat = new int[a.length][b[0].length];
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < b[0].length; j++) {
+                for (int k = 0; k < a[0].length; k++) {
+                    resultat[i][j] += a[i][k] * b[k][j];
+                }
+            }
+        }
 
-	}
+        return resultat;
+    }
 }
