@@ -26,6 +26,7 @@ public class Tabeller {
 		skrivUt(tabell);
 		
 		System.out.println();
+		System.out.println();
 		
 		
 		
@@ -116,22 +117,39 @@ public class Tabeller {
 
 	// b) SE PÅ!!
 	public static String tilStreng(int[] tabell) {
-		System.out.println();
+//		System.out.println();
+//		String result = "[";
+//
+//		System.out.print("[");
+//		for (int i = 0; i < tabell.length; i++) {
+//			System.out.print(tabell[i]);
+//
+//			if (i < tabell.length - 1) {
+//				System.out.print(", ");
+//
+//			}
+//		}
+//
+//		System.out.println("]");
+//		return result;
+
+		
+		
+		// FORSLAG TIL LØSNING
+		
 		String result = "[";
-
-		System.out.print("[");
+		
 		for (int i = 0; i < tabell.length; i++) {
-			System.out.print(tabell[i]);
-
+			result += tabell[i];
+			
 			if (i < tabell.length - 1) {
-				System.out.print(", ");
-
+				result += ",";
 			}
 		}
-
-		System.out.println("]");
+		result += "]";
+		
 		return result;
-
+		
 	}
 
 	// c)
