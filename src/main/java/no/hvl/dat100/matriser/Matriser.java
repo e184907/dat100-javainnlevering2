@@ -7,6 +7,9 @@ public class Matriser {
 		int[][] matrise1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 		int[][] matrise2 = { { 3, 2, 1 }, { 6, 5, 4 }, { 9, 8, 7 } };
 
+		
+		
+		
 		// Utskrift av metoder
 
 		// a)
@@ -15,11 +18,9 @@ public class Matriser {
 
 		System.out.println();
 
+		
 		// b)
 		System.out.println("Matrise som string: " + "\n" + tilStreng(matrise1));
-
-
-		System.out.println();
 
 
 		// c)
@@ -29,13 +30,16 @@ public class Matriser {
 
 		System.out.println();
 
-		System.out.println();
 		
+		// d)
 		System.out.print("Matrise1 og matrise2 er lik: ");
 		System.out.println(erLik(matrise1, matrise2));
 
 	}
 
+	
+	
+	
 	// Implementerte metoder
 
 	// a)
@@ -49,9 +53,6 @@ public class Matriser {
 		}
 
 	}
-
-
-	// b) MÅ ENDRES TIL FUNKE FOR MATRISE!!
 
 	// b)
 
