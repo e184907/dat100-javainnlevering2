@@ -19,8 +19,7 @@ public class Matriser {
 		System.out.println("Matrise som string: " + "\n" + tilStreng(matrise1));
 
 
-		System.out.println();
-
+		
 
 		// c)
 		int[][] skalerMatrise = skaler(2, matrise1);
@@ -29,7 +28,6 @@ public class Matriser {
 
 		System.out.println();
 
-		System.out.println();
 		
 		System.out.print("Matrise1 og matrise2 er lik: ");
 		System.out.println(erLik(matrise1, matrise2));
@@ -95,9 +93,6 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-
-		//int[][] a = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-		// int[][] b = { { 3, 2, 1 }, { 6, 5, 4 }, { 9, 8, 7 } };
 
 		if (a.length != b.length) {
 			return false;
