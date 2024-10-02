@@ -6,7 +6,8 @@ public class Matriser {
 
 		int[][] matrise1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 		int[][] matrise2 = { { 3, 2, 1 }, { 6, 5, 4 }, { 9, 8, 7 } };
-
+		int[][] matrise3 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+ 
 		
 		
 		
@@ -32,8 +33,10 @@ public class Matriser {
 
 		
 		// d)
-		System.out.print("Matrise1 og matrise2 er lik: ");
-		System.out.println(erLik(matrise1, matrise2));
+		System.out.println("Matrise1 og Matrise2 er lik: " + erLik(matrise1, matrise2));
+		
+		System.out.println("Matrise1 og Matrise3 er lik: " + erLik(matrise1, matrise3));
+
 
 	}
 
@@ -65,10 +68,7 @@ public class Matriser {
 			for (int i = 0; i < matrise[j].length; i++) {
 				result += matrise[j][i];
 
-
-				if (i < matrise[j].length - 1) {
-					result += " ";
-				}
+				result += " ";
 
 			}
 			result += "\n";
@@ -96,9 +96,6 @@ public class Matriser {
 
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
-
-		//int[][] a = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-		// int[][] b = { { 3, 2, 1 }, { 6, 5, 4 }, { 9, 8, 7 } };
 
 		if (a.length != b.length) {
 			return false;
