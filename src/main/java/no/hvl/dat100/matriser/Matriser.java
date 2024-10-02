@@ -18,7 +18,9 @@ public class Matriser {
 		// b)
 		System.out.println("Matrise som string: " + "\n" + tilStreng(matrise1));
 
+
 		System.out.println();
+
 
 		// c)
 		int[][] skalerMatrise = skaler(2, matrise1);
@@ -48,7 +50,11 @@ public class Matriser {
 
 	}
 
+
 	// b) MÅ ENDRES TIL FUNKE FOR MATRISE!!
+
+	// b)
+
 	public static String tilStreng(int[][] matrise) {
 
 		String result = "";
@@ -58,6 +64,7 @@ public class Matriser {
 			for (int i = 0; i < matrise[j].length; i++) {
 				result += matrise[j][i];
 
+
 				if (i < matrise[j].length - 1) {
 					result += " ";
 				}
@@ -66,6 +73,8 @@ public class Matriser {
 			result += "\n";
 		}
 
+
+		
 		return result;
 
 	}
@@ -87,20 +96,20 @@ public class Matriser {
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
-		int[][] matrise1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-		int[][] matrise2 = { { 3, 2, 1 }, { 6, 5, 4 }, { 9, 8, 7 } };
+		//int[][] a = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		// int[][] b = { { 3, 2, 1 }, { 6, 5, 4 }, { 9, 8, 7 } };
 
-		if (matrise1.length != matrise2.length) {
+		if (a.length != b.length) {
 			return false;
 
 		}
-		for (int i = 0; i < matrise1.length; i++) {
-			if (matrise1[i].length != matrise2[i].length) {
+		for (int i = 0; i < a.length; i++) {
+			if (a[i].length != b[i].length) {
 				return false;
 
 			}
-			for (int j = 0; j < matrise1[i].length; j++) {
-				if (matrise1[i][j] != matrise2[i][j]) {
+			for (int j = 0; j < a[i].length; j++) {
+				if (a[i][j] != b[i][j]) {
 					return false;
 
 				}
