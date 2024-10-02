@@ -38,19 +38,6 @@ public class Matriser {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	// Implementerte metoder
 
 	// a)
