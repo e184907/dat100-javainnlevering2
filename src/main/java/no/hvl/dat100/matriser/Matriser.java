@@ -15,12 +15,11 @@ public class Matriser {
 
 		System.out.println();
 
+		
 		// b)
 		System.out.println("Matrise som string: " + "\n" + tilStreng(matrise1));
 
-
 		
-
 		// c)
 		int[][] skalerMatrise = skaler(2, matrise1);
 		System.out.println("Utskrift multiplisert matrise: ");
@@ -28,12 +27,14 @@ public class Matriser {
 
 		System.out.println();
 
+		
 		// d)
 		
 		System.out.print("Matrise1 og matrise2 er lik: ");
 		System.out.println(erLik(matrise1, matrise2));
 		System.out.println();
 
+		
 		// e)
 		System.out.println("Matrise1:");
 		skrivUt(matrise1);
@@ -74,10 +75,7 @@ public class Matriser {
 			for (int i = 0; i < matrise[j].length; i++) {
 				result += matrise[j][i];
 
-
-				if (i < matrise[j].length - 1) {
-					result += " ";
-				}
+				result += " ";
 
 			}
 			result += "\n";
