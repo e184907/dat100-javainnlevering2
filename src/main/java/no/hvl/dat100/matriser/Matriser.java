@@ -24,7 +24,7 @@ public class Matriser {
 		
 		
 		// b)
-		System.out.println("Matrise som string: " + tilStreng(matrise1));
+		System.out.println("Matrise som string: " + "\n" + tilStreng(matrise1));
 		
 		System.out.println();
 		
@@ -57,7 +57,7 @@ public class Matriser {
 		
 	}
 
-	// b)  MÅ ENDRES TIL FUNKE FOR MATRISE!!
+	// b)
 	public static String tilStreng(int[][] matrise) {
 
 		String result = "";
@@ -69,16 +69,11 @@ public class Matriser {
 			for (int i = 0; i < matrise[j].length; i++) {
 				result += matrise[j][i];
 			
-				if (i < matrise[j].length - 1) {
-					result += " ";
-				}
-			
+				result += " ";
 			}
-			result += "/n ";
+
+			result += "\n";
 		}
-		
-	
-		
 		
 		return result;
 		
